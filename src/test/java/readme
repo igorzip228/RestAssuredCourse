@@ -1,0 +1,5 @@
+1. Use baseURI, basePathh etc in the TestConfig in @BeforeTest
+2. Add request / response specifications to the TestConfig
+3. Add separate class specification
+4. Add EndPoints
+

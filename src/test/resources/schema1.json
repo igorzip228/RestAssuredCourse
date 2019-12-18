@@ -1,0 +1,132 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "success": {
+      "type": "boolean"
+    },
+    "type": {
+      "type": "integer"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "categoryId": {
+          "type": "integer"
+        },
+        "sort": {
+          "type": "integer"
+        },
+        "title": {
+          "type": "string"
+        },
+        "shortDescription": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "price": {
+          "type": "integer"
+        },
+        "planInstallationPrice": {
+          "type": "integer"
+        },
+        "isOneTimePay": {
+          "type": "integer"
+        },
+        "resources": {
+          "type": "object",
+          "properties": {
+            "logoResource": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "version": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "id",
+                "url",
+                "version"
+              ]
+            },
+            "imageHomeResource": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "version": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "id",
+                "url",
+                "version"
+              ]
+            },
+            "imageOrderResource": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "version": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "id",
+                "url",
+                "version"
+              ]
+            }
+          },
+          "required": [
+            "logoResource",
+            "imageHomeResource",
+            "imageOrderResource"
+          ]
+        },
+        "visible": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "categoryId",
+        "sort",
+        "title",
+        "shortDescription",
+        "description",
+        "price",
+        "planInstallationPrice",
+        "isOneTimePay",
+        "resources",
+        "visible"
+      ]
+    }
+  },
+  "required": [
+    "success",
+    "type",
+    "data"
+  ]
+}
